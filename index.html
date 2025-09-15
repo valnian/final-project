@@ -1,0 +1,751 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volleyball Passion - Home</title>
+    <meta name="description" content="Discover the exciting world of volleyball - rules, techniques, equipment, and how to get involved in this dynamic sport.">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #3498db;
+            --secondary: #e74c3c;
+            --accent: #f39c12;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --text: #333;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: #f9f9f9;
+        }
+        
+        /* Accessibility Features */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--secondary);
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            transition: var(--transition);
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4 {
+            color: var(--dark);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+        }
+        
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--secondary);
+        }
+        
+        /* Layout */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--light);
+            padding: 1rem 0;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-circle {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            position: relative;
+        }
+        
+        .logo-circle::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border: 2px solid white;
+            border-radius: 50%;
+        }
+        
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--dark);
+        }
+        
+        /* Navigation */
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+        
+        nav a {
+            font-weight: 600;
+            padding: 0.5rem;
+            border-radius: 4px;
+        }
+        
+        nav a:hover, 
+        nav a:focus {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://img.freepik.com/free-photo/female-professional-volleyball-players-action-3d-stadium_654080-1089.jpg?semt=ais_hybrid&w=740&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: var(--transition);
+        }
+        
+        .btn:hover {
+            background-color: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        /* Card Styles */
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .card-content {
+            padding: 1.5rem;
+        }
+        
+        .img-caption {
+            font-size: 0.9rem;
+            text-align: center;
+            color: #666;
+            padding: 0.5rem;
+            background-color: #f5f5f5;
+        }
+        
+        /* Grid Layout */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        /* Flexbox Layout */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .flex-item {
+            flex: 1 1 300px;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        /* Lists */
+        .simple-list {
+            list-style-type: square;
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .simple-list li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .complex-list {
+            list-style-type: none;
+            margin-bottom: 1.5rem;
+        }
+        
+        .complex-list > li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .complex-list > li:before {
+            content: "•";
+            color: var(--primary);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .complex-list ul {
+            list-style-type: circle;
+            margin: 0.5rem 0 0.5rem 1.5rem;
+        }
+        
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: white;
+            box-shadow: var(--shadow);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: var(--primary);
+            color: white;
+            font-weight: 600;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        
+        /* Form Styles */
+        form {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            margin: 2rem 0;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        input, select, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        
+        /* Video Container */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-section h3 {
+            color: white;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links a {
+            color: #ddd;
+            display: block;
+            padding: 0.3rem 0;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-icons a {
+            color: white;
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--primary);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-circle"></div>
+                <div class="logo-text">Volleyball Passion</div>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="rules.html">Rules</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="equipment.html">Equipment</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Discover the Thrill of Volleyball</h1>
+            <p>Join millions of players worldwide in this dynamic, exciting team sport that promotes fitness, coordination, and camaraderie.</p>
+            <a href="skills.html" class="btn">Learn Basic Skills</a>
+        </div>
+    </section>
+
+    <main id="main-content" class="container">
+        <section>
+            <h2>Welcome to Volleyball Passion</h2>
+            <p>Volleyball is a popular team sport played by millions around the world. It's fun, exciting, and provides excellent physical exercise. Whether you're a beginner or an experienced player, our website will help you improve your skills, understand the rules, and connect with other volleyball enthusiasts.</p>
+            
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pMp3sV24mrU?si=17iFI31iEhHN2vn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p class="img-caption">Video: Basic volleyball skills and techniques - Source: YouTube</p>
+        </section>
+
+        <div class="main-content">
+            <div class="primary-content">
+                <section>
+                    <h2>Why Play Volleyball?</h2>
+                    <p>Volleyball offers numerous physical and social benefits:</p>
+                    
+                    <ul class="simple-list">
+                        <li>Improves cardiovascular health and stamina</li>
+                        <li>Enhances hand-eye coordination and reflexes</li>
+                        <li>Builds muscle strength and tones the body</li>
+                        <li>Develops teamwork and communication skills</li>
+                        <li>Provides opportunities for social interaction</li>
+                        <li>Can be played indoors or outdoors on various surfaces</li>
+                    </ul>
+                    
+                    <div class="card">
+                        <img src="https://img.freepik.com/free-photo/girls-playing-volleyball_23-2149450942.jpg" alt="Women playing volleyball on the beach during sunset" />
+                        <p class="img-caption">Beach volleyball is a popular variation played on sand with two players per team</p>
+                        <div class="card-content">
+                            <h3>Beach vs Indoor Volleyball</h3>
+                            <p>While the basic rules are similar, beach volleyball is played on sand with teams of two, which requires greater endurance and different strategies compared to indoor volleyball.</p>
+                            <a href="rules.html">Learn about the differences</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Volleyball Positions</h2>
+                    <p>In standard indoor volleyball, there are six specialized positions:</p>
+                    
+                    <ol class="complex-list">
+                        <li>Setter
+                            <ul>
+                                <li>Primary playmaker who sets up attacks</li>
+                                <li>Requires excellent ball handling skills</li>
+                            </ul>
+                        </li>
+                        <li>Outside Hitter
+                            <ul>
+                                <li>Primary attacker who hits from left side of court</li>
+                                <li>Also plays a key role in passing and defense</li>
+                            </ul>
+                        </li>
+                        <li>Opposite Hitter
+                            <ul>
+                                <li>Attacks from right side</li>
+                                <li>Often responsible for blocking opponent's outside hitters</li>
+                            </ul>
+                        </li>
+                        <li>Middle Blocker
+                            <ul>
+                                <li>Specializes in blocking opponent attacks</li>
+                                <li>Also attacks quick sets in the middle of the net</li>
+                            </ul>
+                        </li>
+                        <li>Libero
+                            <ul>
+                                <li>Defensive specialist wearing different colored jersey</li>
+                                <li>Cannot attack or serve but excels at passing and digging</li>
+                            </ul>
+                        </li>
+                        <li>Defensive Specialist
+                            <ul>
+                                <li>Similar to libero but without jersey restrictions</li>
+                                <li>Focuses on back-row defense and passing</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </section>
+            </div>
+
+            <aside class="sidebar">
+                <div class="card">
+                    <img src="https://t3.ftcdn.net/jpg/01/71/81/70/360_F_171817041_DkMe5qd77ba9cUPs2cHqPFsWtIFVy0o1.jpg" alt="Close up of a volleyball on a court" />
+                    <p class="img-caption">Official volleyball with distinctive panel design</p>
+                    <div class="card-content">
+                        <h3>Essential Equipment</h3>
+                        <p>To play volleyball, you need minimal equipment: a ball, net, and comfortable athletic wear. Competitive players often invest in specialized shoes and knee pads.</p>
+                        <a href="equipment.html">View equipment guide</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/1473259144/photo/volleyball-ball-and-net-in-voleyball-arena-during-a-match.jpg?s=612x612&w=0&k=20&c=vbn1S1xDKY7XO5lGdR14FCLhHkWXcjoS49j4-Cc1Ukg=" alt="Volleyball net in an indoor arena during a match" />
+                    <p class="img-caption">Official volleyball net setup with antennas marking the boundaries</p>
+                    <div class="card-content">
+                        <h3>Upcoming Events</h3>
+                        <p>Check out our calendar for local tournaments, clinics, and social volleyball events in your area.</p>
+                        <a href="contact.html">Find events near you</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/489699302/photo/women-spiking-and-blocking-a-volleyball.jpg?s=612x612&w=0&k=20&c=eSnMWORi8fjVZVNwmmUSvIWRVDgEQRfmVVgVD2uFo0E=" alt="Volleyball players executing a spike and block at the net" />
+                    <p class="img-caption">Intense action at the net with attacker spiking against blockers</p>
+                    <div class="card-content">
+                        <h3>Improve Your Game</h3>
+                        <p>Browse our tutorials and training tips to develop your skills, from basic passes to advanced attacking techniques.</p>
+                        <a href="skills.html">View training resources</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <section>
+            <h2>Basic Volleyball Rules Overview</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aspect</th>
+                        <th>Description</th>
+                        <th>Indoor Volleyball</th>
+                        <th>Beach Volleyball</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Players</td>
+                        <td>Number per team</td>
+                        <td>6</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Scoring</td>
+                        <td>Points per set</td>
+                        <td>25 (must win by 2)</td>
+                        <td>21 (must win by 2)</td>
+                    </tr>
+                    <tr>
+                        <td>Sets</td>
+                        <td>Sets to win match</td>
+                        <td>3 out of 5</td>
+                        <td>2 out of 3</td>
+                    </tr>
+                    <tr>
+                        <td>Court Size</td>
+                        <td>Dimensions in meters</td>
+                        <td>18×9</td>
+                        <td>16×8</td>
+                    </tr>
+                    <tr>
+                        <td>Libero</td>
+                        <td>Defensive specialist</td>
+                        <td>Allowed</td>
+                        <td>Not allowed</td>
+                    </tr>
+                    <tr>
+                        <td>Touch Rules</td>
+                        <td>Number of touches per side</td>
+                        <td>Maximum of 3</td>
+                        <td>Maximum of 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Join Our Volleyball Community</h2>
+            <p>Interested in learning more or finding players in your area? Sign up for our newsletter:</p>
+            
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                </div>
+                
+                <div class="form-group">
+                    <label for="interest">Primary Interest:</label>
+                    <select id="interest" name="interest">
+                        <option value="beginner">Learning to play</option>
+                        <option value="improve">Improving skills</option>
+                        <option value="find-players">Finding players</option>
+                        <option value="events">Local events</option>
+                        <option value="coaching">Coaching resources</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="comments">Questions or Comments:</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Volleyball Passion</h3>
+                    <p>Your comprehensive resource for everything volleyball - from basic rules to advanced techniques.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rules.html">Rules</a></li>
+                        <li><a href="skills.html">Skills & Techniques</a></li>
+                        <li><a href="equipment.html">Equipment Guide</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="contact.html">Contact & Sign Up</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>External Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://www.fivb.com/" target="_blank">FIVB - International Federation</a></li>
+                        <li><a href="https://www.volleyball.org/" target="_blank">Volleyball World</a></li>
+                        <li><a href="https://www.teamusa.org/usa-volleyball" target="_blank">USA Volleyball</a></li>
+                        <li><a href="https://www.ncaa.com/sports/volleyball-women/d1" target="_blank">NCAA Volleyball</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <p>Follow us on social media for updates, tips, and community events.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><span>FB</span></a>
+                        <a href="#" aria-label="Twitter"><span>TW</span></a>
+                        <a href="#" aria-label="Instagram"><span>IG</span></a>
+                        <a href="#" aria-label="YouTube"><span>YT</span></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Volleyball Passion. This website is a project for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
