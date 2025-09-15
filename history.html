@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volleyball History - Volleyball Passion</title>
+    <meta name="description" content="Explore the rich history of volleyball from its invention in 1895 to its evolution into a global sport played by millions worldwide.">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #3498db;
+            --secondary: #e74c3c;
+            --accent: #f39c12;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --text: #333;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: #f9f9f9;
+        }
+        
+        /* Accessibility Features */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--secondary);
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            transition: var(--transition);
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4 {
+            color: var(--dark);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+        }
+        
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--secondary);
+        }
+        
+        /* Layout */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--light);
+            padding: 1rem 0;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-circle {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            position: relative;
+        }
+        
+        .logo-circle::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border: 2px solid white;
+            border-radius: 50%;
+        }
+        
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--dark);
+        }
+        
+        /* Navigation */
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+        
+        nav a {
+            font-weight: 600;
+            padding: 0.5rem;
+            border-radius: 4px;
+        }
+        
+        nav a:hover, 
+        nav a:focus {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://img.freepik.com/free-photo/female-professional-volleyball-players-action-3d-stadium_654080-1089.jpg?semt=ais_hybrid&w=740&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: var(--transition);
+        }
+        
+        .btn:hover {
+            background-color: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        /* Card Styles */
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .card-content {
+            padding: 1.5rem;
+        }
+        
+        .img-caption {
+            font-size: 0.9rem;
+            text-align: center;
+            color: #666;
+            padding: 0.5rem;
+            background-color: #f5f5f5;
+        }
+        
+        /* Grid Layout */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        /* Flexbox Layout */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .flex-item {
+            flex: 1 1 300px;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        /* Lists */
+        .simple-list {
+            list-style-type: square;
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .simple-list li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .complex-list {
+            list-style-type: none;
+            margin-bottom: 1.5rem;
+        }
+        
+        .complex-list > li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .complex-list > li:before {
+            content: "•";
+            color: var(--primary);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .complex-list ul {
+            list-style-type: circle;
+            margin: 0.5rem 0 0.5rem 1.5rem;
+        }
+        
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: white;
+            box-shadow: var(--shadow);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: var(--primary);
+            color: white;
+            font-weight: 600;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        
+        /* Form Styles */
+        form {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            margin: 2rem 0;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        input, select, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        
+        /* Video Container */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-section h3 {
+            color: white;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links a {
+            color: #ddd;
+            display: block;
+            padding: 0.3rem 0;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-icons a {
+            color: white;
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--primary);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* History Specific Styles */
+        .history-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 100%;
+            margin: 2rem 0;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: var(--primary);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        
+        .timeline-item {
+            position: relative;
+            width: 50%;
+            padding: 10px 40px;
+            box-sizing: border-box;
+        }
+        
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+        
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border: 4px solid var(--primary);
+            border-radius: 50%;
+            top: 15px;
+            right: -13px;
+            z-index: 1;
+        }
+        
+        .timeline-item:nth-child(even)::after {
+            left: -13px;
+        }
+        
+        .timeline-content {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 6px;
+            box-shadow: var(--shadow);
+        }
+        
+        .timeline-date {
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.6rem;
+            }
+            
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+            
+            .timeline-item::after {
+                left: 18px;
+            }
+            
+            .timeline-item:nth-child(odd)::after {
+                left: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-circle"></div>
+                <div class="logo-text">Volleyball Passion</div>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rules.html">Rules</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="equipment.html">Equipment</a></li>
+                    <li><a href="history.html" aria-current="page">History</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>The History of Volleyball</h1>
+            <p>Explore the fascinating journey of volleyball from its invention in 1895 to its evolution into a global sport played by millions worldwide.</p>
+        </div>
+    </section>
+
+    <main id="main-content" class="container">
+        <section class="history-section">
+            <h2>Origins of Volleyball</h2>
+            <p>Volleyball was invented in 1895 by William G. Morgan, a physical education director at the YMCA in Holyoke, Massachusetts. Morgan created the game as a less strenuous alternative to basketball for older YMCA members.</p>
+            
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/William_G._Morgan.jpg/800px-William_G._Morgan.jpg" alt="William G. Morgan, inventor of volleyball">
+                <p class="img-caption">William G. Morgan (1870-1942), inventor of volleyball</p>
+            </div>
+            
+            <h3>The Early Game</h3>
+            <p>Originally called "mintonette," the game was designed to combine elements of basketball, baseball, tennis, and handball. Key characteristics of the original game included:</p>
+            
+            <ul class="complex-list">
+                <li>First exhibition match played at Springfield College in 1896
+                    <ul>
+                        <li>Professor Alfred T. Halstead suggested the name "volleyball"</li>
+                        <li>The net was 6'6" high (much lower than today's standards)</li>
+                    </ul>
+                </li>
+                <li>Original rules
+                    <ul>
+                        <li>No limit to number of players</li>
+                        <li>No limit to number of hits per side</li>
+                        <li>Games played to 21 points</li>
+                        <li>Net faults resulted in point for other team</li>
+                    </ul>
+                </li>
+                <li>Early equipment
+                    <ul>
+                        <li>The first ball was a basketball bladder</li>
+                        <li>Later, a specially designed ball was created by Spalding</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <div class="main-content">
+            <div class="primary-content">
+                <section class="history-section">
+                    <h2>Historical Timeline of Volleyball</h2>
+                    <p>Volleyball has undergone significant changes since its invention. Here are the key milestones in its development:</p>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">1895</div>
+                            <div class="timeline-content">
+                                <h4>Invention of Volleyball</h4>
+                                <p>William G. Morgan creates "mintonette" at the YMCA in Holyoke, Massachusetts.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">1896</div>
+                            <div class="timeline-content">
+                                <h4>First Exhibition Match</h4>
+                                <p>The game is demonstrated at Springfield College and renamed "volleyball".</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">1900</div>
+                            <div class="timeline-content">
+                                <h4>Special Ball Designed</h4>
+                                <p>Spalding creates the first dedicated volleyball, replacing the basketball bladder.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">1916</div>
+                            <div class="timeline-content">
+                                <h4>Set and Spike Introduced</h4>
+                                <p>The Philippines introduce the set and spike offensive attack pattern.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">1928</div>
+                            <div class="timeline-content">
+                                <h4>United States Volleyball Association</h4>
+                                <p>The first national governing body for volleyball is established.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">1947</div>
+                            <div class="timeline-content">
+                                <h4>FIVB Founded</h4>
+                                <p>The Fédération Internationale de Volleyball is established in Paris.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">1964</div>
+                            <div class="timeline-content">
+                                <h4>Olympic Debut</h4>
+                                <p>Volleyball is introduced to the Olympic Games in Tokyo.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">1996</div>
+                            <div class="timeline-content">
+                                <h4>Beach Volleyball Olympics</h4>
+                                <p>Beach volleyball is added to the Olympic program in Atlanta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="history-section">
+                    <h2>Evolution of Rules and Gameplay</h2>
+                    <p>Volleyball has undergone numerous rule changes throughout its history to make the game more exciting and spectator-friendly:</p>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Year</th>
+                                <th>Rule Change</th>
+                                <th>Impact on Game</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1917</td>
+                                <td>Game point reduced from 21 to 15</td>
+                                <td>Faster-paced games</td>
+                            </tr>
+                            <tr>
+                                <td>1920</td>
+                                <td>Three hits per side rule established</td>
+                                <td>More strategic gameplay</td>
+                            </tr>
+                            <tr>
+                                <td>1922</td>
+                                <td>First national championships held</td>
+                                <td>Standardization of rules</td>
+                            </tr>
+                            <tr>
+                                <td>1930s</td>
+                                <td>Beach volleyball emerges</td>
+                                <td>New variation of the sport</td>
+                            </tr>
+                            <tr>
+                                <td>1984</td>
+                                <td>Libero position introduced internationally</td>
+                                <td>Enhanced defensive capabilities</td>
+                            </tr>
+                            <tr>
+                                <td>1998</td>
+                                <td>Rally scoring implemented</td>
+                                <td>Faster games, more exciting for spectators</td>
+                            </tr>
+                            <tr>
+                                <td>2000</td>
+                                <td>Let serve allowed</td>
+                                <td>More aggressive serving</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="card">
+                        <img src="https://media.istockphoto.com/id/1473259144/photo/volleyball-ball-and-net-in-voleyball-arena-during-a-match.jpg?s=612x612&w=0&k=20&c=vbn1S1xDKY7XO5lGdR14FCLhHkWXcjoS49j4-Cc1Ukg=" alt="Historic volleyball net and ball">
+                        <p class="img-caption">Modern volleyball equipment has evolved significantly from the original design</p>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="sidebar">
+                <div class="card">
+                    <img src="https://img.freepik.com/free-photo/girls-playing-volleyball_23-2149450942.jpg" alt="Vintage volleyball game">
+                    <p class="img-caption">Early volleyball games were played with significantly different rules</p>
+                    <div class="card-content">
+                        <h3>Historical Facts</h3>
+                        <p>Interesting tidbits from volleyball's past:</p>
+                        <ul class="simple-list">
+                            <li>The first volleyball net was only 6'6" high</li>
+                            <li>Original games had no limit on players per side</li>
+                            <li>Volleyball was originally called "mintonette"</li>
+                            <li>The first special volleyball was designed in 1900</li>
+                            <li>Beach volleyball began in California in the 1930s</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Volleyball Hall of Fame</h3>
+                        <p>Located in Holyoke, Massachusetts, the Volleyball Hall of Fame honors the greatest players, coaches, and contributors to the sport.</p>
+                        <p>Notable inductees include:</p>
+                        <ul class="simple-list">
+                            <li>Karch Kiraly (USA)</li>
+                            <li>Lang Ping (China)</li>
+                            <li>Giba (Brazil)</li>
+                            <li>Regla Torres (Cuba)</li>
+                            <li>Yuri Chesnokov (Russia)</li>
+                        </ul>
+                        <a href="https://www.volleyhall.org/" target="_blank">Visit Hall of Fame Website</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Historical Research</h3>
+                        <p>Are you researching volleyball history? Sign up for our historical newsletter:</p>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="interest">Historical Interest:</label>
+                                <select id="interest" name="interest">
+                                    <option value="">Select your interest</option>
+                                    <option value="early-history">Early History (1895-1920)</option>
+                                    <option value="olympic-history">Olympic History</option>
+                                    <option value="rule-changes">Rule Changes</option>
+                                    <option value="players">Historic Players</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="questions">Questions:</label>
+                                <textarea id="questions" name="questions" rows="4" placeholder="What would you like to know about volleyball history?"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <section class="history-section">
+            <h2>Global Expansion of Volleyball</h2>
+            <p>From its American origins, volleyball spread around the world through YMCA networks and eventually became a global sport:</p>
+            
+            <div class="grid-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h4>Early International Growth</h4>
+                        <p>Volleyball spread internationally through YMCA networks:</p>
+                        <ul class="simple-list">
+                            <li>1900: Canada becomes first foreign country to adopt volleyball</li>
+                            <li>1905: Cuba discovers volleyball during YMCA demonstration</li>
+                            <li>1908: Volleyball reaches Japan</li>
+                            <li>1910: Volleyball introduced to the Philippines</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <h4>Post-WWII Expansion</h4>
+                        <p>After World War II, volleyball experienced rapid international growth:</p>
+                        <ul class="simple-list">
+                            <li>1947: Formation of FIVB (International Volleyball Federation)</li>
+                            <li>1949: First Men's World Championships</li>
+                            <li>1952: First Women's World Championships</li>
+                            <li>1964: Volleyball added to Olympic Games</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <h4>Modern Global Sport</h4>
+                        <p>Today, volleyball is played worldwide with strong programs in:</p>
+                        <ul class="simple-list">
+                            <li>Brazil: Dominant force in both indoor and beach volleyball</li>
+                            <li>United States: Strong collegiate and national programs</li>
+                            <li>Russia: Traditional power in indoor volleyball</li>
+                            <li>Italy: Top professional league and national team</li>
+                            <li>China: Women's team is consistently among world's best</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pMp3sV24mrU?si=17iFI31iEhHN2vn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p class="img-caption">Video: The history and evolution of volleyball as a global sport</p>
+        </section>
+
+        <section class="history-section">
+            <h2>Volleyball in the Olympics</h2>
+            <p>Volleyball's inclusion in the Olympic Games significantly increased its global popularity and competitive level:</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Host City</th>
+                        <th>Men's Gold</th>
+                        <th>Women's Gold</th>
+                        <th>Notable Event</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1964</td>
+                        <td>Tokyo</td>
+                        <td>Soviet Union</td>
+                        <td>Japan</td>
+                        <td>Volleyball's Olympic debut</td>
+                    </tr>
+                    <tr>
+                        <td>1976</td>
+                        <td>Montreal</td>
+                        <td>Poland</td>
+                        <td>Japan</td>
+                        <td>Introduction of antennae on nets</td>
+                    </tr>
+                    <tr>
+                        <td>1984</td>
+                        <td>Los Angeles</td>
+                        <td>United States</td>
+                        <td>China</td>
+                        <td>First US men's volleyball gold</td>
+                    </tr>
+                    <tr>
+                        <td>1996</td>
+                        <td>Atlanta</td>
+                        <td>Netherlands</td>
+                        <td>Cuba</td>
+                        <td>Beach volleyball added to Olympics</td>
+                    </tr>
+                    <tr>
+                        <td>2008</td>
+                        <td>Beijing</td>
+                        <td>United States</td>
+                        <td>Brazil</td>
+                        <td>First beach volleyball repeat champions</td>
+                    </tr>
+                    <tr>
+                        <td>2016</td>
+                        <td>Rio de Janeiro</td>
+                        <td>Brazil</td>
+                        <td>China</td>
+                        <td>First South American host wins gold</td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>Tokyo</td>
+                        <td>France</td>
+                        <td>United States</td>
+                        <td>First gold for France in volleyball</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Volleyball Passion</h3>
+                    <p>Your comprehensive resource for everything volleyball - from basic rules to advanced techniques.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rules.html">Rules</a></li>
+                        <li><a href="skills.html">Skills & Techniques</a></li>
+                        <li><a href="equipment.html">Equipment Guide</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="contact.html">Contact & Sign Up</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>External Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://www.fivb.com/" target="_blank">FIVB - International Federation</a></li>
+                        <li><a href="https://www.volleyball.org/" target="_blank">Volleyball World</a></li>
+                        <li><a href="https://www.teamusa.org/usa-volleyball" target="_blank">USA Volleyball</a></li>
+                        <li><a href="https://www.volleyhall.org/" target="_blank">Volleyball Hall of Fame</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <p>Follow us on social media for updates, tips, and community events.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><span>FB</span></a>
+                        <a href="#" aria-label="Twitter"><span>TW</span></a>
+                        <a href="#" aria-label="Instagram"><span>IG</span></a>
+                        <a href="#" aria-label="YouTube"><span>YT</span></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Volleyball Passion. This website is a project for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
