@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volleyball Equipment - Volleyball Passion</title>
+    <meta name="description" content="Complete guide to volleyball equipment including balls, nets, shoes, protective gear, and accessories for players of all levels.">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #3498db;
+            --secondary: #e74c3c;
+            --accent: #f39c12;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --text: #333;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: #f9f9f9;
+        }
+        
+        /* Accessibility Features */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--secondary);
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            transition: var(--transition);
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4 {
+            color: var(--dark);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+        }
+        
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--secondary);
+        }
+        
+        /* Layout */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--light);
+            padding: 1rem 0;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-circle {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            position: relative;
+        }
+        
+        .logo-circle::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border: 2px solid white;
+            border-radius: 50%;
+        }
+        
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--dark);
+        }
+        
+        /* Navigation */
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+        
+        nav a {
+            font-weight: 600;
+            padding: 0.5rem;
+            border-radius: 4px;
+        }
+        
+        nav a:hover, 
+        nav a:focus {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://media.istockphoto.com/id/1473259144/photo/volleyball-ball-and-net-in-voleyball-arena-during-a-match.jpg?s=612x612&w=0&k=20&c=vbn1S1xDKY7XO5lGdR14FCLhHkWXcjoS49j4-Cc1Ukg=');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: var(--transition);
+        }
+        
+        .btn:hover {
+            background-color: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        /* Card Styles */
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .card-content {
+            padding: 1.5rem;
+        }
+        
+        .img-caption {
+            font-size: 0.9rem;
+            text-align: center;
+            color: #666;
+            padding: 0.5rem;
+            background-color: #f5f5f5;
+        }
+        
+        /* Grid Layout */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        /* Flexbox Layout */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .flex-item {
+            flex: 1 1 300px;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        /* Lists */
+        .simple-list {
+            list-style-type: square;
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .simple-list li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .complex-list {
+            list-style-type: none;
+            margin-bottom: 1.5rem;
+        }
+        
+        .complex-list > li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .complex-list > li:before {
+            content: "•";
+            color: var(--primary);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .complex-list ul {
+            list-style-type: circle;
+            margin: 0.5rem 0 0.5rem 1.5rem;
+        }
+        
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: white;
+            box-shadow: var(--shadow);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: var(--primary);
+            color: white;
+            font-weight: 600;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        
+        /* Form Styles */
+        form {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            margin: 2rem 0;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        input, select, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        
+        /* Video Container */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-section h3 {
+            color: white;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links a {
+            color: #ddd;
+            display: block;
+            padding: 0.3rem 0;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-icons a {
+            color: white;
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--primary);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Equipment Specific Styles */
+        .equipment-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+        
+        .equipment-comparison {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .equipment-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+        
+        .equipment-item img {
+            max-width: 100%;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+        }
+        
+        .price-tag {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-circle"></div>
+                <div class="logo-text">Volleyball Passion</div>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rules.html">Rules</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="equipment.html" aria-current="page">Equipment</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Volleyball Equipment Guide</h1>
+            <p>Discover the essential gear you need to play volleyball, from beginner basics to professional equipment.</p>
+        </div>
+    </section>
+
+    <main id="main-content" class="container">
+        <section class="equipment-section">
+            <h2>Essential Volleyball Equipment</h2>
+            <p>Whether you're just starting out or looking to upgrade your gear, having the right equipment is crucial for performance, safety, and enjoyment of the game.</p>
+            
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pMp3sV24mrU?si=17iFI31iEhHN2vn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p class="img-caption">Video: Essential volleyball equipment for beginners and advanced players</p>
+        </section>
+
+        <div class="main-content">
+            <div class="primary-content">
+                <section class="equipment-section">
+                    <h2>Volleyballs</h2>
+                    <p>The ball is the most essential piece of equipment. Different types are designed for indoor, beach, and recreational play.</p>
+                    
+                    <div class="card">
+                        <img src="https://t3.ftcdn.net/jpg/01/71/81/70/360_F_171817041_DkMe5qd77ba9cUPs2cHqPFsWtIFVy0o1.jpg" alt="Official indoor volleyball with panel design">
+                        <p class="img-caption">Official indoor volleyball with 18 panels and microfiber composite leather</p>
+                    </div>
+                    
+                    <h3>Types of Volleyballs</h3>
+                    <ul class="complex-list">
+                        <li>Indoor Volleyballs
+                            <ul>
+                                <li>Size: 65-67 cm circumference</li>
+                                <li>Weight: 260-280 grams</li>
+                                <li>Material: Leather or composite leather</li>
+                                <li>Panel design: 18 panels for better control</li>
+                            </ul>
+                        </li>
+                        <li>Beach Volleyballs
+                            <ul>
+                                <li>Size: Slightly larger than indoor balls</li>
+                                <li>Weight: Same as indoor balls</li>
+                                <li>Material: Softer, waterproof composite</li>
+                                <li>Panel design: Typically fewer panels</li>
+                            </ul>
+                        </li>
+                        <li>Recreational Volleyballs
+                            <ul>
+                                <li>Softer materials for beginners</li>
+                                <li>Often colorful and lightweight</li>
+                                <li>Good for casual play and training</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Brand</th>
+                                <th>Model</th>
+                                <th>Type</th>
+                                <th>Price Range</th>
+                                <th>Best For</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mikasa</td>
+                                <td>MVA200</td>
+                                <td>Indoor</td>
+                                <td>$60-$80</td>
+                                <td>Competitive play</td>
+                            </tr>
+                            <tr>
+                                <td>Wilson</td>
+                                <td>ATC5000</td>
+                                <td>Indoor</td>
+                                <td>$40-$60</td>
+                                <td>Recreational play</td>
+                            </tr>
+                            <tr>
+                                <td>Spalding</td>
+                                <td>King of the Beach</td>
+                                <td>Beach</td>
+                                <td>$30-$50</td>
+                                <td>Beach volleyball</td>
+                            </tr>
+                            <tr>
+                                <td>Tachikara</td>
+                                <td>SV5W</td>
+                                <td>Indoor</td>
+                                <td>$50-$70</td>
+                                <td>Training</td>
+                            </tr>
+                            <tr>
+                                <td>Molten</td>
+                                <td>FLISTATEC</td>
+                                <td>Indoor</td>
+                                <td>$70-$90</td>
+                                <td>Professional play</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="equipment-section">
+                    <h2>Footwear and Apparel</h2>
+                    <p>Proper footwear and clothing can enhance performance and prevent injuries.</p>
+                    
+                    <h3>Volleyball Shoes</h3>
+                    <p>Volleyball-specific shoes are designed for court sports with features like gum rubber soles for better traction and cushioning for jumps.</p>
+                    
+                    <ul class="simple-list">
+                        <li><strong>Gum rubber soles</strong> for superior grip on court surfaces</li>
+                        <li><strong>Enhanced cushioning</strong> in the forefoot and heel for jump absorption</li>
+                        <li><strong>Lightweight construction</strong> for quick movements</li>
+                        <li><strong>Ankle support</strong> features to help prevent injuries</li>
+                    </ul>
+                    
+                    <h3>Apparel</h3>
+                    <p>Volleyball uniforms are designed for comfort and freedom of movement:</p>
+                    
+                    <div class="equipment-comparison">
+                        <div class="equipment-item">
+                            <h4>Jerseys</h4>
+                            <p>Lightweight, moisture-wicking fabric</p>
+                            <span class="price-tag">$30-$60</span>
+                        </div>
+                        <div class="equipment-item">
+                            <h4>Shorts</h4>
+                            <p>Stretchy fabric with built-in compression shorts</p>
+                            <span class="price-tag">$25-$50</span>
+                        </div>
+                        <div class="equipment-item">
+                            <h4>Knee Pads</h4>
+                            <p>Protection for diving and sliding</p>
+                            <span class="price-tag">$15-$40</span>
+                        </div>
+                        <div class="equipment-item">
+                            <h4>Ankle Braces</h4>
+                            <p>Support and injury prevention</p>
+                            <span class="price-tag">$20-$50</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="sidebar">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/489699302/photo/women-spiking-and-blocking-a-volleyball.jpg?s=612x612&w=0&k=20&c=eSnMWORi8fjVZVNwmmUSvIWRVDgEQRfmVVgVD2uFo0E=" alt="Volleyball players wearing proper equipment">
+                    <p class="img-caption">Players wearing knee pads and proper volleyball shoes during a game</p>
+                    <div class="card-content">
+                        <h3>Protective Gear</h3>
+                        <p>Essential protective equipment for volleyball players:</p>
+                        <ul class="simple-list">
+                            <li>Knee pads for diving protection</li>
+                            <li>Ankle braces for support</li>
+                            <li>Elbow pads for defensive players</li>
+                            <li>Finger tape for setters</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Net Systems</h3>
+                        <p>Volleyball nets and court equipment:</p>
+                        <ul class="simple-list">
+                            <li>Official net height: 7'11⅝" for men, 7'4⅛" for women</li>
+                            <li>Net width: 3 feet</li>
+                            <li>Antennas to mark boundaries</li>
+                            <li>Portable systems for recreational play</li>
+                        </ul>
+                        <a href="rules.html">See official net specifications</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Equipment Recommendations</h3>
+                        <p>Get personalized equipment suggestions based on your needs:</p>
+                        <form>
+                            <div class="form-group">
+                                <label for="skill-level">Skill Level:</label>
+                                <select id="skill-level" name="skill-level">
+                                    <option value="">Select your level</option>
+                                    <option value="beginner">Beginner</option>
+                                    <option value="intermediate">Intermediate</option>
+                                    <option value="advanced">Advanced</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="play-type">Primary Play Type:</label>
+                                <select id="play-type" name="play-type">
+                                    <option value="">Select type</option>
+                                    <option value="indoor">Indoor</option>
+                                    <option value="beach">Beach</option>
+                                    <option value="both">Both</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="position">Primary Position:</label>
+                                <select id="position" name="position">
+                                    <option value="">Select position</option>
+                                    <option value="setter">Setter</option>
+                                    <option value="hitter">Hitter</option>
+                                    <option value="libero">Libero</option>
+                                    <option value="all-around">All-Around</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="budget">Budget Range:</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select budget</option>
+                                    <option value="under-50">Under $50</option>
+                                    <option value="50-100">$50-$100</option>
+                                    <option value="100-200">$100-$200</option>
+                                    <option value="200-plus">$200+</option>
+                                </select>
+                            </div>
+                            
+                            <button type="submit" class="btn">Get Recommendations</button>
+                        </form>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <section class="equipment-section">
+            <h2>Training Equipment</h2>
+            <p>Specialized training equipment can help players develop skills and improve performance:</p>
+            
+            <div class="grid-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h4>Training Balls</h4>
+                        <p>Specialized balls for skill development:</p>
+                        <ul class="simple-list">
+                            <li>Weighted balls for strength training</li>
+                            <li>Smaller balls for setting accuracy</li>
+                            <li>Lightweight balls for beginners</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <h4>Targets and Nets</h4>
+                        <p>Equipment for targeted practice:</p>
+                        <ul class="simple-list">
+                            <li>Passing targets</li>
+                            <li>Serving targets</li>
+                            <li>Portable practice nets</li>
+                            <li>Ball carts and baskets</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <h4>Strength & Conditioning</h4>
+                        <p>Equipment for physical training:</p>
+                        <ul class="simple-list">
+                            <li>Resistance bands for arm swings</li>
+                            <li>Jump training equipment</li>
+                            <li>Agility ladders for footwork</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/girls-playing-volleyball_23-2149450942.jpg" alt="Volleyball players practicing with training equipment">
+                <p class="img-caption">Players using various training equipment during practice session</p>
+                <div class="card-content">
+                    <h3>Setting Up a Home Practice Area</h3>
+                    <p>With minimal equipment, you can create an effective practice space at home:</p>
+                    <ol class="complex-list">
+                        <li>Space Requirements
+                            <ul>
+                                <li>Minimum 10x10 feet area</li>
+                                <li>Ceiling height of at least 12 feet</li>
+                                <li>Smooth wall for ball control drills</li>
+                            </ul>
+                        </li>
+                        <li>Essential Equipment
+                            <ul>
+                                <li>Quality volleyball</li>
+                                <li>Practice net or rope</li>
+                                <li>Target markers</li>
+                                <li>Ball rebounder (optional)</li>
+                            </ul>
+                        </li>
+                        <li>Safety Considerations
+                            <ul>
+                                <li>Clear space of breakable items</li>
+                                <li>Proper flooring to prevent slips</li>
+                                <li>Adequate lighting</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section class="equipment-section">
+            <h2>Equipment Care and Maintenance</h2>
+            <p>Proper care extends the life of your volleyball equipment and ensures optimal performance:</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Equipment</th>
+                        <th>Cleaning</th>
+                        <th>Storage</th>
+                        <th>Lifespan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Volleyballs</td>
+                        <td>Mild soap and water, air dry</td>
+                        <td>Moderate temperature, away from sharp objects</td>
+                        <td>1-3 years with regular use</td>
+                    </tr>
+                    <tr>
+                        <td>Net Systems</td>
+                        <td>Wipe with damp cloth, check for wear</td>
+                        <td>Dry location, avoid moisture</td>
+                        <td>3-5 years</td>
+                    </tr>
+                    <tr>
+                        <td>Knee Pads</td>
+                        <td>Machine wash (gentle), air dry</td>
+                        <td>Lay flat, avoid stretching</td>
+                        <td>1-2 seasons</td>
+                    </tr>
+                    <tr>
+                        <td>Volleyball Shoes</td>
+                        <td>Remove insoles, gentle brush, air dry</td>
+                        <td>Cool, dry place, shoe trees recommended</td>
+                        <td>6-12 months with regular use</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Volleyball Passion</h3>
+                    <p>Your comprehensive resource for everything volleyball - from basic rules to advanced techniques.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rules.html">Rules</a></li>
+                        <li><a href="skills.html">Skills & Techniques</a></li>
+                        <li><a href="equipment.html">Equipment Guide</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="contact.html">Contact & Sign Up</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>External Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://www.fivb.com/" target="_blank">FIVB - International Federation</a></li>
+                        <li><a href="https://www.volleyball.org/" target="_blank">Volleyball World</a></li>
+                        <li><a href="https://www.teamusa.org/usa-volleyball" target="_blank">USA Volleyball</a></li>
+                        <li><a href="https://www.ncaa.com/sports/volleyball-women/d1" target="_blank">NCAA Volleyball</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <p>Follow us on social media for updates, tips, and community events.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><span>FB</span></a>
+                        <a href="#" aria-label="Twitter"><span>TW</span></a>
+                        <a href="#" aria-label="Instagram"><span>IG</span></a>
+                        <a href="#" aria-label="YouTube"><span>YT</span></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Volleyball Passion. This website is a project for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
